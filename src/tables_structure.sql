@@ -24,9 +24,13 @@ CREATE TABLE users (
     modified DATETIME DEFAULT NULL
 ) CHARSET = utf8mb4;
 
+INSERT INTO users (username,password,role,created,modified)
+VALUES ('admin','$2y$10$Ify4444s0d24gDJohQ3y6ObZJ8Jn/Phyakf9kB0sdjXhuAze38k/O','admin',now(),now());
+
+
 CREATE TABLE talents (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    `order` INT(11) DEFAULT NULL,
+    orders INT(11) DEFAULT NULL,
     name VARCHAR(50) NOT NULL,
     name_jp VARCHAR(50) DEFAULT NULL,
     thumb VARCHAR(255) DEFAULT NULL,
