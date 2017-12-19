@@ -1,0 +1,120 @@
+.pc,.sp {background-color: #656565;font-family: YuGothic, '游ゴシック', sans-serif;}
+.pc .container {width: 960px; margin: 50px auto;display: block; overflow: auto; }
+.sp .container{width: 100%; padding: 20px;overflow: hidden; margin-top: 44px;}
+.hidden {display: none;}
+a {text-decoration: none;}
+a,p,div,label {font-family: YuGothic, '游ゴシック', sans-serif;}
+header,footer{display: block; z-index: 100;}
+footer {margin-top: 30px;box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.24)}
+header {box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24)}
+.pc header a img{height: 25px; float: left;}
+.sp header,footer {height: 100px; background-color: #cc0033; }
+
+.pc header h1 {display: inline-block;height: 100%;position: absolute;}
+.pc header h1 a {float: left;height: 50px;padding: 0 20px; }
+.pc header a:hover,.pc a:focus  {color: #cc0033}
+.pc header .biglogo {height: 120px; display: block; width: 90%;margin:auto;}
+.pc header .biglogo img {height: 100%;object-fit: cover; object-position: center;}
+.pc header {background-color: #fff; height: 150px; position: relative;top: 0;width: 100%;padding: 0}
+.pc header li {width: 25%;display: inline-block; text-align: center; float: left; font-size: 14px; letter-spacing: 3px;height: 30px;}
+.pc header li a:hover { background-color: #fff; transition: 0.3s;}
+.pc header li a {padding: 5px 0; display: block;height: 30px;color: #fff}
+.pc header li:hover > a{color: #cc0033;transition: 0.3s;opacity: 1;}
+.pc header ul {margin: 0 auto; width: 60%;}
+.pc header nav {width: 100%; margin: 0;background-color: #cc0033; height: 30px;}
+
+
+h2.title {border-bottom: 1px solid #cc0033; font-size: 24px; margin: 30px 0; letter-spacing: 2px;color: #fff;}
+.sp h2.title {margin: 20px 0}
+.pc .thumb{position: relative;}
+.pc .article-box {padding: 30px 20px; overflow: auto;}
+.pc .article-box a{display: inline-block; width: 100%; height: 100px;float: left;}
+.pc .article-box .thumb {width: 100px;height: 100px;float: left;}
+.sp .article-box .thumb {width: 100px;height: 80px;float: left;}
+.article-box .thumb img {height: 100%;object-fit: cover; object-position: center; width: 100%}
+.article-box h3 {font-size: 18px; color: #ddd; font-weight:bold;padding: 10px 0 0 10px; display: inline-block; width: 800px;transition: 0.1s}
+.article-box p {font-size: 16px; color: #aaa; padding: 0 10px; display: inline-block; width: 800px;}
+.sp .article-box h3{font-size: 14px; width: auto;}
+.sp .article-box p{font-size: 12px;width: auto;}
+
+.pc .title {margin: 30px 0;}
+.title h2 {font-size: 40px; font-weight: 500;color: #fff;}
+.pc .title h2,.pc .title p {letter-spacing: 5px;}
+.talent-box a{display: inline-block;float: left;}
+.pc .talent-box a{width: 240px; height: 320px;}
+.sp .talent-box a{width: 50%;height: 50%;}
+.talent-box .thumb {width: 90%;height: 85%;margin: auto;}
+.talent-box .thumb img {height: 100%;object-fit: cover; object-position: top; width: 100%;}
+.pc .thumb::before {content: "";background-color: #000;position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;opacity: 0}
+h2,h3,h4 {text-shadow:1px 1px 2px #0000008a;}
+.pc a:hover > .thumb::before{opacity: 0.5;transition: 0.3s}
+.pc a:hover > h4{color: #fff;transition: 0.3s; font-weight:bold;font-size:30px;transform: translateY(-160px);letter-spacing: 2px;}
+.pc a:hover > h3{color: #fff;transition: 0.1s; font-size: 22px;transform: scaleX(1.05);}
+.talent-box h4 {font-size: 14px; font-weight: normal;text-align: center;color: #ddd}
+
+.pc .talent-profile {width: 100%;}
+.pc .talent-profile p,dd { white-space: pre-line;}
+.pc .left {width: 40%; float: left;}
+.pc .talent-profile .profile-image{height: 500px; background-color: #eee; position: relative;cursor: pointer;}
+.pc .talent-profile .profile-image div {background-color: rgba(0,0,0,0.7);position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;color: #fff;font-size: 20px;text-align: center;padding-top: 60%;letter-spacing: 3px;opacity: 0}
+.pc .talent-profile .profile-image:hover > div {opacity: 1; transition: 0.3s}
+.pc .talent-profile .profile-image img {height: 100%;width: 100%; object-position: center;object-fit: cover;}
+.pc .talent-profile .profile{margin: 20px 0;color: #eee}
+.pc .right {width: 60%; float: right;min-height: 300px;}
+.pc .talent-profile .profile dl {font-size: 12px; font-weight: normal;}
+.pc .talent-profile .profile dt {width: 100px;float: left; font-weight: normal;}
+.pc .talent-profile .profile dd {margin-left: 125px;}
+.pc .talent-profile .event .event-tabs {width: 68px;background-color: #eee; border-radius: 0 0 0 10px;float: right;}
+.pc .talent-profile .event label {display: block; cursor: pointer; color: #2d2d2d; padding: 3px;transition: 0.2s;}
+.pc .talent-profile .event label:hover,.pc .talent-profile .event label.selected{background-color: #adadad;transform: translateX(-10px) scaleX(1.1); transition: 0.2s;box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6)}
+.pc .talent-profile .event .event-contents {float: left;width: 480px; padding: 20px;margin-bottom: 20px;}
+.pc .talent-profile .event .event-contents p {font-size: 16px; line-height: 2; color: #ddd}
+
+.sp .title h2 {font-size: 32px;}
+.sp .talent-profile {width: 100%;}
+.sp .talent-profile p,dd { white-space: pre-line;}
+.sp .left {width: 100%; float: left;}
+.sp .talent-profile .profile-image{height: 400px;width: 100%;margin: auto; background-color: #eee; position: relative;cursor: pointer;}
+.sp .talent-profile .profile-image div {display: none;}
+.sp .talent-profile .profile-image img {height: 100%;width: 100%; object-position: top;object-fit: cover;}
+.sp .talent-profile .profile{margin: 20px 0;color: #eee}
+.sp .right {width: 100%; float: right;min-height: 300px;}
+.sp .talent-profile .profile dl {font-size: 12px; font-weight: normal;}
+.sp .talent-profile .profile dt {width: 100px;float: left; font-weight: normal;}
+.sp .talent-profile .profile dd {margin-left: 125px;}
+.sp .talent-profile .event .event-tabs {width: 100%;background-color: #eee; border-radius: 0 0 5px 0;float: right;}
+.sp .talent-profile .event label {display: inline-block; cursor: pointer; color: #2d2d2d; padding: 3px;transition: 0.2s;}
+.sp .talent-profile .event label.selected{background-color: #adadad;transform: translateY(10px) scaleX(1.1); transition: 0.2s;box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.6)}
+.sp .talent-profile .event .event-contents {float: left; padding: 10px;margin-bottom: 20px;}
+.sp .talent-profile .event .event-contents p {font-size: 12px; line-height: 1.5; color: #ddd}
+
+#image_viewer {position: fixed; width: 100%;height: 100%;top: 0;left: 0;z-index: 100;background-color: rgba(0,0,0,0.7);}
+#image_viewer img{position: fixed; width: 100%;height: 100%;top: 0;left: 0;object-fit: scale-down;}
+#image_viewer {display: none;}
+#image_viewer label{position: fixed;top: 50%; font-weight: bold;font-size: 40px; color: #fff;font-family: serif;transition: 0.3s}
+#image_viewer label:hover {cursor: pointer;transform: scale(1.5);transition: 0.3s}
+#image_viewer label:nth-child(2){left: 60px;}
+#image_viewer label:nth-child(3){right: 60px;}
+.sp #image_viewer label:nth-child(2){left: 0}
+.sp #image_viewer label:nth-child(3){right: 0}
+#image_viewer label:last-child {right: 30px; top: 30px;font-family: yugothic;}
+.sp #image_viewer label:last-child{font-size: 20px;}
+
+#talent_form img {width: 200px;height: 200px;object-fit: cover; float: left;}
+#talent_form input[type="text"] {width: 100px; display: inline-block;}
+#talent_form input[type="date"] {width: 150px; display: inline-block;}
+#talent_form label {display: inline;margin: 0 5px;}
+#talent_form textarea{width:100%;display: block;height: 200px;}
+.btn {background-color: #2675bb; border-radius: 5px !important; margin: 10px; color: #fff}
+
+.pc article .title {height: 60px;margin: 50px 0; border: 1px solid #cc0033; border-width: 0 0 1px 0; padding-bottom: 10px;}
+.pc article .title p {display: block; float: right; color: #ddd;font-size: 12px;}
+.pc article .title h2 {border:0px; margin: 0; font-size: 24px;}
+.pc article .contents {background-color: #bbb; color: #333; min-height: 500px; padding:30px;border-radius: 10px;}
+
+.sp header {height: 44px; padding:0; position: fixed; width: 100%;top: 0}
+.sp header nav {width: 100%;height: 44px}
+.sp header h1 {margin: auto;height: 44px; width: 150px;}
+.sp header a {height: 44px;width: auto;}
+.sp header a img{object-fit: contain;}
+.sp header span {position: absolute;left: 0;line-height: 44px; font-size: 36px;}
