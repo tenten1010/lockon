@@ -54,6 +54,10 @@ class PagesController extends AppController
         
     }
 
+    public function appoint(){
+        
+    }
+
     public function display(...$path)
     {
         $count = count($path);

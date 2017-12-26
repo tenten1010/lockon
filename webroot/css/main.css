@@ -16,7 +16,7 @@ header {box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24)}
 .pc header .biglogo {height: 120px; display: block; width: 90%;margin:auto;}
 .pc header .biglogo img {height: 100%;object-fit: cover; object-position: center;}
 .pc header {background-color: #fff; height: 150px; position: relative;top: 0;width: 100%;padding: 0}
-.pc header li {width: 25%;display: inline-block; text-align: center; float: left; font-size: 14px; letter-spacing: 3px;height: 30px;}
+.pc header li {width: 20%;display: inline-block; text-align: center; float: left; font-size: 14px; letter-spacing: 3px;height: 30px;}
 .pc header li a:hover { background-color: #fff; transition: 0.3s;}
 .pc header li a {padding: 5px 0; display: block;height: 30px;color: #fff}
 .pc header li:hover > a{color: #cc0033;transition: 0.3s;opacity: 1;}
@@ -110,7 +110,7 @@ h2,h3,h4 {text-shadow:1px 1px 2px #0000008a;}
 .pc article .title {height: 60px;margin: 50px 0; border: 1px solid #cc0033; border-width: 0 0 1px 0; padding-bottom: 10px;}
 .pc article .title p {display: block; float: right; color: #ddd;font-size: 12px;}
 .pc article .title h2 {border:0px; margin: 0; font-size: 24px;}
-.pc article .contents {background-color: #bbb; color: #333; min-height: 500px; padding:30px;border-radius: 10px;}
+article .contents {background-color: #bbb; color: #333; min-height: 500px; padding:30px;border-radius: 10px; }
 
 .sp header {height: 44px; padding:0; position: fixed; width: 100%;top: 0}
 .sp header nav {width: 100%;height: 44px}
@@ -118,3 +118,11 @@ h2,h3,h4 {text-shadow:1px 1px 2px #0000008a;}
 .sp header a {height: 44px;width: auto;}
 .sp header a img{object-fit: contain;}
 .sp header span {position: absolute;left: 0;line-height: 44px; font-size: 36px;}
+
+.flame {background-color: #eee;color: red; padding: 15px;border-radius: 5px;line-height: 1.2;}
+article dt {color:#cc0033; padding: 10px 0;}
+.red {color: #cc0033;text-shadow: none;font-weight: bold;}
+.dlindl {width: 90%;margin: auto;background-color: #eee;}
+.dlindl dt{padding: 0;background-color: #cc0033;color: #fff;margin-top: -30px}
+.dlindl dd{padding: 20px;}
+.pc dt h3{font-size: 24px;}

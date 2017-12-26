@@ -53,6 +53,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/talents',['controller' => 'Talents', 'action' => 'index']);
     $routes->connect('/news',['controller' => 'Articles', 'action' => 'index']);
     $routes->connect('/company',['controller' => 'Pages', 'action' => 'company']);
+    $routes->connect('/appoint',['controller' => 'Pages', 'action' => 'appoint']);
     $routes->connect('/talents/*',['controller' => 'Talents', 'action' => 'view'],['name' => '\s+', 'pass' => ['name']]);
     $routes->connect('/talents/add/*',['controller' => 'Talents', 'action' => 'add'],['name' => '\s+', 'pass' => ['name']]);
     $routes->connect('/talents/edit/*',['controller' => 'Talents', 'action' => 'edit'],['name' => '\s+', 'pass' => ['name']]);

@@ -26,6 +26,7 @@ $(function(){
 		<li><a href="/">ホーム</a></li>
     	<li><a href="/talents/">タレント</a></li>
     	<li><a href="/news">最新情報</a></li>
+    	<li><a href="/appoint">面接について</a></li>
     	<li><a style="border:0px" href="/company">会社概要</a></li>
 	</ul>
 </div>
