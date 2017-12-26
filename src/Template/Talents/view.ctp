@@ -34,7 +34,7 @@ echo $this->element('image_viewer',['images'=>$images]);
 	<div class="left">
 		<div class="profile-image">
 			<div>写真を見る</div>
-			<img src="<?=$talent->thumb?>">
+			<img src="<?=$talent->thumb."?time=".strtotime($talent->modified)?>">
 		</div>
 		<div class="profile">
 			<dl>
@@ -57,9 +57,10 @@ echo $this->element('image_viewer',['images'=>$images]);
 				<?php }} ?>
 			</div>
 			<div class="event-contents">
-				<?php foreach ($tabs as $key => $tab){?>
+				<?php foreach ($tabs as $key => $tab){
+					if($talent->$key){?>
 					<p class="hidden" name="<?=$tab?>" ><?=$talent->$key?></p>
-				<?php } ?>
+				<?php }} ?>
 			</div>
 		</div>
 	</div>

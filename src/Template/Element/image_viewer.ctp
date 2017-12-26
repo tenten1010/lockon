@@ -25,7 +25,7 @@ $(function(){
 <div id="image_viewer">
 	<div>
 		<?php foreach ($images as $key => $image): ?>
-			<img id="<?=$key?>" class="hidden" src="<?=$image->url?>">
+			<img id="<?=$key?>" class="hidden" src="<?=$image->url.'?time='.strtotime($talent->modified)?>">
 		<?php endforeach ?>
 	</div>
 	<label><</label>

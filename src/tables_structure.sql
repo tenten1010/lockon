@@ -73,7 +73,7 @@ CREATE TABLE medias (
 ) CHARSET = utf8mb4;
 
 INSERT INTO medias (talent_id,orders,type,url,title,description,created,modified)
-VALUES (1,2,'image','http://www.pyramid.tokyo/wp-content/uploads/2015/01/NEW-e1511933253852.jpg','title','＊NTV『カウントダウン hulu』※NA 〈毎週月曜21:54～22:00 O.A〉
+VALUES (1,2,'image','http://image.lock-on.tokyo.s3-ap-northeast-1.amazonaws.com/talents/rin_shibasaki/1.JPG','title','＊NTV『カウントダウン hulu』※NA 〈毎週月曜21:54～22:00 O.A〉
 ＊FM-FUJI『Lovelizm』※MC 〈毎週土曜23:00～23:30 O.A〉
 ＊NHKラジオ第一『つぶや句575』〈不定期放送18:00～20:00 O.A〉',now(),now());
 
