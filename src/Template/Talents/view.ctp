@@ -58,7 +58,7 @@ echo $this->element('image_viewer',['images'=>$images]);
 	<div class="right">
 		<div class="sns-bar">
 			<a href="<?=$talent->twitter?>" class="twitter sns <?php if(!$talent->twitter)echo 'hidden'?>"></a>
-			<a href="<?=$talent->instagram?>" class="instagram sns <?php if(!$talent->twitter)echo 'hidden'?>"></a>
+			<a href="<?=$talent->instagram?>" class="instagram sns <?php if(!$talent->instagram)echo 'hidden'?>"></a>
 		</div>
 		<div class="event">
 			<div class="event-tabs">
