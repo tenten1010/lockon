@@ -30,6 +30,10 @@ table tr th{border:none;color: #000; width: 30%;color:#cc0033;}
 					<td>〒150-0041<br>渋谷区神南1-11-5ダイネス壱番館渋谷908<br></td>
 				</tr>
 				<tr>
+					<th>お問い合わせ</th>
+					<td>lockonoffice@gmail.com</td>
+				</tr>
+				<tr>
 					<th>代表取締役</th>
 					<td>髙田弘樹</td>
 				</tr>

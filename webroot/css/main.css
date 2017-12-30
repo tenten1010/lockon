@@ -1,3 +1,4 @@
+.hidden {display: none !important;}
 .pc,.sp {background-color: #656565;font-family: YuGothic, '游ゴシック', sans-serif;}
 .pc .container {width: 960px; margin: 50px auto;display: block; overflow: auto; }
 .sp .container{width: 100%; padding: 20px;overflow: hidden; margin-top: 44px;}

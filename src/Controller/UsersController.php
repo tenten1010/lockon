@@ -48,21 +48,21 @@ class UsersController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
-        $user = $this->Users->newEntity();
-        if ($this->request->is('post')) {
-            $user = $this->Users->patchEntity($user, $this->request->getData());
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('追加できました'));
+    // public function add()
+    // {
+    //     $user = $this->Users->newEntity();
+    //     if ($this->request->is('post')) {
+    //         $user = $this->Users->patchEntity($user, $this->request->getData());
+    //         if ($this->Users->save($user)) {
+    //             $this->Flash->success(__('追加できました'));
 
-                return $this->redirect(['action' => '/']);
-            }
-            $this->Flash->error(__('追加失敗ました'));
-        }
-        $this->set(compact('user'));
-        $this->set('_serialize', ['user']);
-    }
+    //             return $this->redirect(['action' => '/']);
+    //         }
+    //         $this->Flash->error(__('追加失敗ました'));
+    //     }
+    //     $this->set(compact('user'));
+    //     $this->set('_serialize', ['user']);
+    // }
 
     public function login()
     {

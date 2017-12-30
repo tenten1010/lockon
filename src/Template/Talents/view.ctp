@@ -22,6 +22,13 @@ $(function(){
 	});
 });
 </script>
+<style type="text/css">
+.sns-bar {padding: 0 20px;height: 25px;}
+.sp .sns-bar{padding: 20px; height: 65px;}
+.sns-bar .sns {display: inline-block;width: 25px; height: 25px; background-repeat: no-repeat;background-size: contain; margin-right: 8px;}
+.sns-bar a.twitter {background-image: url('http://www.pyramid.tokyo/resources/images/icon_twitter@2x.png');}
+.sns-bar a.instagram {background-image: url('http://www.pyramid.tokyo/resources/images/icon_instagram@2x.png');}
+</style>
 <?php 
 $tabs = ['series'=>'TV番組','event'=>'イベント','drama'=>'ドラマ','cm'=>'CM','movie'=>'映画','radio'=>'ラジオ','magazine'=>'雑誌','mook'=>'ムック','other'=>'その他'];
 echo $this->element('image_viewer',['images'=>$images]);
@@ -49,6 +56,10 @@ echo $this->element('image_viewer',['images'=>$images]);
 		</div>
 	</div>
 	<div class="right">
+		<div class="sns-bar">
+			<a href="<?=$talent->twitter?>" class="twitter sns <?php if(!$talent->twitter)echo 'hidden'?>"></a>
+			<a href="<?=$talent->instagram?>" class="instagram sns <?php if(!$talent->twitter)echo 'hidden'?>"></a>
+		</div>
 		<div class="event">
 			<div class="event-tabs">
 				<?php foreach ($tabs as $key => $tab){
