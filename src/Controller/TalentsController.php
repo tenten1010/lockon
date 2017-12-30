@@ -20,7 +20,7 @@ class TalentsController extends AppController
      */
     public function index()
     {
-        $talents = $this->paginate($this->Talents->find()->order(['orders']));
+        $talents = $this->paginate($this->Talents->find()->where(['status'=>1])->order(['orders']));
 
         $this->set(compact('talents'));
         $this->set('_serialize', ['talents']);
