@@ -1,4 +1,5 @@
 .hidden {display: none}
+a.red:hover {color: #860021;transform: scaleX(1.1); transition:0.3s;}
 .pc,.sp {background-color: #656565;font-family: YuGothic, '游ゴシック', sans-serif;}
 .pc .container {width: 960px; margin: 50px auto;display: block; overflow: auto; }
 .sp .container{width: 100%; padding: 20px;overflow: hidden; margin-top: 44px;}
@@ -123,6 +124,7 @@ article .contents {background-color: #bbb; color: #333; min-height: 500px; paddi
 .flame {background-color: #eee;color: red; padding: 15px;border-radius: 5px;line-height: 1.2;}
 article dt {color:#cc0033; padding: 10px 0;}
 .red {color: #cc0033;text-shadow: none;font-weight: bold;}
+a.red {display: inline-block;}
 .dlindl {width: 90%;margin: auto;background-color: #eee;}
 .dlindl dt{padding: 0;background-color: #cc0033;color: #fff;margin-top: -30px}
 .dlindl dd{padding: 20px;}

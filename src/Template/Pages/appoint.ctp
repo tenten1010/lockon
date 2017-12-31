@@ -19,7 +19,7 @@ $this->end();?>
 問い合わせだけでも大丈夫です。お気軽にご連絡ください。<br>
 <div class="flame">※写メを送っていただければギャラの査定を行います。
 迷っている方も、一度ご自身のギャラを知った上で考えていただいても結構です。</div>
-お問い合わせ：<span class="red">lockonoffice@gmail.com</span>
+<a class="red" href="mailto:lockonoffice@gmail.com">お問い合わせはこちらへ</a>
 </dd>
 </dl>
 
