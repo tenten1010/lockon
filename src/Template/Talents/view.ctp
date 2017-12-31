@@ -28,6 +28,7 @@ $(function(){
 .sns-bar .sns {display: inline-block;width: 25px; height: 25px; background-repeat: no-repeat;background-size: contain; margin-right: 8px;}
 .sns-bar a.twitter {background-image: url('http://www.pyramid.tokyo/resources/images/icon_twitter@2x.png');}
 .sns-bar a.instagram {background-image: url('http://www.pyramid.tokyo/resources/images/icon_instagram@2x.png');}
+.sns-bar .invalid {opacity: 0.5;cursor: default;}
 </style>
 <?php 
 $tabs = ['series'=>'TV番組','event'=>'イベント','drama'=>'ドラマ','cm'=>'CM','movie'=>'映画','radio'=>'ラジオ','magazine'=>'雑誌','mook'=>'ムック','other'=>'その他'];
@@ -57,8 +58,9 @@ echo $this->element('image_viewer',['images'=>$images]);
 	</div>
 	<div class="right">
 		<div class="sns-bar">
-			<a href="<?=$talent->twitter?>" class="twitter sns <?php if(!$talent->twitter)echo 'hidden'?>"></a>
-			<a href="<?=$talent->instagram?>" class="instagram sns <?php if(!$talent->instagram)echo 'hidden'?>"></a>
+			<?php foreach (['twitter','instagram'] as $sns) { ?>
+				<a href="<?=(($talent->$sns)?$talent->$sns:'javascript:void(0)')?>" class="<?=$sns?> sns <?php if(!$talent->$sns)echo 'invalid'?>"></a>
+			<?php } ?>
 		</div>
 		<div class="event">
 			<div class="event-tabs">
