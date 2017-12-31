@@ -3,6 +3,7 @@
 /tmp/*
 /logs/*
 /tmp/*
+.env
 
 # OS generated files #
 ######################
