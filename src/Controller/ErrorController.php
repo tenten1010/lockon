@@ -31,6 +31,7 @@ class ErrorController extends AppController
     public function initialize()
     {
         $this->loadComponent('RequestHandler');
+        $this->_load_isMobile();
     }
 
     /**
@@ -64,5 +65,15 @@ class ErrorController extends AppController
      */
     public function afterFilter(Event $event)
     {
+    }
+
+    private function _load_isMobile(){
+        if (!isset($_SERVER['HTTP_USER_AGENT'])) {
+            $isMobile=false;
+        }else{
+            $ua=$_SERVER['HTTP_USER_AGENT'];
+            $isMobile=((strpos($ua,'iPhone')!==false)||(strpos($ua,'iPod')!==false)||(strpos($ua,'Android')!==false));
+        }
+        $this->set('isMobile', $isMobile);
     }
 }

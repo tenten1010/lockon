@@ -30,9 +30,18 @@ endif;
 
 $this->end();
 endif;
+$this->layout = 'lockon'; 
+$this->start('meta');
+$option = [
+    "title" => 'ページが見つかりませんでした',
+    "description" => 'お探しのページが見つかりませんでした',
+    "robot" => 'noindex,follow',
+];
+echo $this->element('meta',$option);
+$this->end();
 ?>
-<h2><?= h($message) ?></h2>
-<p class="error">
-    <strong><?= __d('cake', 'Error') ?>: </strong>
-    <?= __d('cake', 'The requested address {0} was not found on this server.', "<strong>'{$url}'</strong>") ?>
-</p>
+<div class="error">
+    <h2>404 Not Found</h2>
+    <p>お探しのページが見つかりませんでした</p>
+    <a href="/">トップへ</a>  
+</div>

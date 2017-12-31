@@ -35,9 +35,18 @@ if (Configure::read('debug')) :
 
     $this->end();
 endif;
+$this->layout = 'lockon'; 
+$this->start('meta');
+$option = [
+    "title" => 'ただいまメンテナンス中',
+    "description" => $talent->description,
+    "robot" => 'noindex,follow',
+];
+echo $this->element('meta',$option);
+$this->end();
 ?>
-<h2><?= __d('cake', 'An Internal Error Has Occurred') ?></h2>
-<p class="error">
-    <strong><?= __d('cake', 'Error') ?>: </strong>
-    <?= h($message) ?>
-</p>
+<div class="error">
+    <h2>500 Error</h2>
+    <p>ただいまメンテナンス中</p>
+    <a href="/">トップへ</a>  
+</div>
