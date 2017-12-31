@@ -47,6 +47,7 @@ echo $this->element('image_viewer',['images'=>$images]);
 		<div class="profile">
 			<dl>
 				<dt>生年月日</dt><dd><?=$talent->birthday?></dd>
+				<?php if($talent->age){?><dt>年齢</dt><dd><?=$talent->age?>歳</dd><?php }?>
 				<dt>出身地</dt><dd><?=$talent->birthplace?></dd>
 				<dt>血液型</dt><dd><?=$talent->bloodtype?></dd>
 				<dt>サイズ</dt><dd><?=$this->echoThreeSize($talent->size)?></dd>

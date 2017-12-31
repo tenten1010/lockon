@@ -34,6 +34,7 @@ use Cake\ORM\Entity;
  * @property string $instagram
  * @property string $blog
  * @property string $facebook
+ * @property int $age
  *
  * @property \App\Model\Entity\Media[] $medias
  * @property \App\Model\Entity\User[] $users
@@ -78,6 +79,7 @@ class Talent extends Entity
         'instagram' => true,
         'blog' => true,
         'facebook' => true,
+        'age' => true,
         'medias' => true,
         'users' => true
     ];

@@ -11,6 +11,8 @@ $talent = $this->echoEditTalent($talent);
 	<input type="text" name="name" value="<?=$talent->name?>">
 	<label>誕生日</label>
 	<input type="date" name="birthday" value="<?=$talent->birthday?>"><br>
+	<label>年齢</label>
+	<input type="text" name="age" value="<?=$talent->age?>"><br>
 	<label>出身地</label>
 	<input type="text" name="birthplace" value="<?=$talent->birthplace?>">
 	<label>血液型</label>

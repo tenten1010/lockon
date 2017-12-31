@@ -174,6 +174,10 @@ class TalentsTable extends Table
             ->maxLength('facebook', 255)
             ->allowEmpty('facebook');
 
+        $validator
+            ->integer('age')
+            ->allowEmpty('age');
+
         return $validator;
     }
 }

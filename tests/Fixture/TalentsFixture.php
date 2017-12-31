@@ -45,6 +45,7 @@ class TalentsFixture extends TestFixture
         'instagram' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'collate' => 'utf8mb4_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'blog' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'collate' => 'utf8mb4_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'facebook' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'collate' => 'utf8mb4_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'age' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -67,7 +68,7 @@ class TalentsFixture extends TestFixture
             'name' => 'Lorem ipsum dolor sit amet',
             'name_jp' => 'Lorem ipsum dolor sit amet',
             'thumb' => 'Lorem ipsum dolor sit amet',
-            'birthday' => '2017-12-14',
+            'birthday' => '2017-12-31',
             'birthplace' => 'Lorem ipsum dolor sit amet',
             'bloodtype' => 'Lorem ipsum dolor sit amet',
             'size' => 'Lorem ipsum dolor sit amet',
@@ -84,12 +85,13 @@ class TalentsFixture extends TestFixture
             'mook' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
             'other' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
             'status' => 1,
-            'created' => '2017-12-14 12:50:02',
-            'modified' => '2017-12-14 12:50:02',
+            'created' => '2017-12-31 10:55:26',
+            'modified' => '2017-12-31 10:55:26',
             'twitter' => 'Lorem ipsum dolor sit amet',
             'instagram' => 'Lorem ipsum dolor sit amet',
             'blog' => 'Lorem ipsum dolor sit amet',
-            'facebook' => 'Lorem ipsum dolor sit amet'
+            'facebook' => 'Lorem ipsum dolor sit amet',
+            'age' => 1
         ],
     ];
 }
