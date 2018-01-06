@@ -47,6 +47,9 @@ echo $this->element('image_viewer',['images'=>$images]);
 			<div>写真を見る</div>
 			<img src="<?=$talent->thumb."?time=".strtotime($talent->modified)?>">
 		</div>
+		<?php if($isMobile){?>
+			<span style="color: #ddd;font-size: 11px;display: block;text-align: center;">画像をクリックして写真を見る</span>
+		<?php }?>
 		<div class="profile">
 			<dl>
 				<dt>生年月日</dt><dd><?=$talent->birthday?></dd>
