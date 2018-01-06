@@ -1,7 +1,7 @@
 <?php $this->layout = 'lockon'; 
 $this->start('meta');
 $option = [
-    "title" => 'ロックオン芸能事務所｜最新情報編集画面'.$article->title,
+    "title" => '最新情報編集画面｜'.$article->title,
     "description" => $article->description,
     "robot" => 'noindex,follow'
 ];
