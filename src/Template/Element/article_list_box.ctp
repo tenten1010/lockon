@@ -5,7 +5,7 @@
 				<img src="<?= $article->thumb?>">
 			</div>
 			<h3><?= $article->title?></h3>
-			<p><?= $article->body?></p>
+			<p><?= $article->description?></p>
 		</a>
 	<?php endforeach;?>
 </div>

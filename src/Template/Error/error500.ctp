@@ -39,7 +39,7 @@ $this->layout = 'lockon';
 $this->start('meta');
 $option = [
     "title" => 'ただいまメンテナンス中',
-    "description" => $talent->description,
+    "description" => 'ただいまメンテナンス中',
     "robot" => 'noindex,follow',
 ];
 echo $this->element('meta',$option);

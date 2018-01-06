@@ -10,10 +10,10 @@ use Cake\ORM\Entity;
  * @property string $title
  * @property string $body
  * @property string $thumb
- * @property string $item_order
  * @property int $status
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ * @property string $description
  */
 class Article extends Entity
 {
@@ -31,9 +31,9 @@ class Article extends Entity
         'title' => true,
         'body' => true,
         'thumb' => true,
-        'item_order' => true,
         'status' => true,
         'created' => true,
-        'modified' => true
+        'modified' => true,
+        'description' => true
     ];
 }

@@ -36,7 +36,10 @@ echo $this->element('image_viewer',['images'=>$images]);
 ?>
 <div class="title">
 	<h2><?= $talent->name_jp?></h2>
-	<p><?= $talent->name?></p>
+	<p><?= $talent->name_en?></p>
+	<?php if($authUser&&$authUser['username']=='admin'){?>
+		<a href="/talents/edit/<?=$talent->name?>" class="btn">編集</a>
+	<?php } ?>
 </div>
 <div class="talent-profile">
 	<div class="left">

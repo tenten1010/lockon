@@ -49,7 +49,7 @@ class AppView extends View
     }
 
     public function echoTalent($talent){
-        $talent->name = strtoupper(str_replace('_', ' ', $talent->name));
+        $talent->name_en = strtoupper(str_replace('_', ' ', $talent->name));
         $talent->birthday = ($talent->birthday) ? date('Y年m月d日',strtotime($talent->birthday)): '未公開';
         return $talent;
     }

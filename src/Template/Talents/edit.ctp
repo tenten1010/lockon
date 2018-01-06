@@ -1,4 +1,12 @@
 <?php $this->layout = 'lockon'; 
+$this->start('meta');
+$option = [
+    "title" => 'ロックオン芸能事務所｜芸能人編集画面'.$talent->name_jp,
+    "description" => $talent->description,
+    "robot" => 'noindex,follow'
+];
+echo $this->element('meta',$option);
+$this->end();
 $talent = $this->echoEditTalent($talent);
 ?>
 <form id="talent_form" method="post">

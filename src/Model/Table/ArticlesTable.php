@@ -66,13 +66,13 @@ class ArticlesTable extends Table
             ->allowEmpty('thumb');
 
         $validator
-            ->scalar('item_order')
-            ->maxLength('item_order', 255)
-            ->allowEmpty('item_order');
-
-        $validator
             ->integer('status')
             ->allowEmpty('status');
+
+        $validator
+            ->scalar('description')
+            ->maxLength('description', 255)
+            ->allowEmpty('description');
 
         return $validator;
     }

@@ -1,5 +1,6 @@
 .hidden {display: none}
 a.red:hover {color: #860021;transform: scaleX(1.1); transition:0.3s;}
+a.btn {padding: 5px 10px;}
 .pc,.sp {background-color: #656565;font-family: YuGothic, '游ゴシック', sans-serif;}
 .pc .container {width: 960px; margin: 50px auto;display: block; overflow: auto; }
 .sp .container{width: 100%; padding: 20px;overflow: hidden; margin-top: 44px;min-height: 75%}
@@ -12,8 +13,8 @@ header {box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24)}
 .pc header a img{height: 25px; float: left;}
 .sp header,footer {height: 100px; background-color: #cc0033; }
 
-.pc header h1 {display: inline-block;height: 100%;position: absolute;}
-.pc header h1 a {float: left;height: 50px;padding: 0 20px; }
+.pc header h1 {display: inline-block;position: absolute;}
+.pc header h1 a {float: left;padding: 0 20px; }
 .pc header a:hover,.pc a:focus  {color: #cc0033}
 .pc header .biglogo {height: 120px; display: block; width: 90%;margin:auto;}
 .pc header .biglogo img {height: 100%;object-fit: cover; object-position: center;}
@@ -108,6 +109,9 @@ h2,h3,h4 {text-shadow:1px 1px 2px #0000008a;}
 #talent_form label {display: inline;margin: 0 5px;}
 #talent_form textarea{width:100%;display: block;height: 200px;}
 .btn {background-color: #2675bb; border-radius: 5px !important; margin: 10px; color: #fff}
+
+#article_form {margin: 10px;}
+#article_form textarea {height: 300px;}
 
 .pc article .title {height: 60px;margin: 50px 0; border: 1px solid #cc0033; border-width: 0 0 1px 0; padding-bottom: 10px;}
 .pc article .title p {display: block; float: right; color: #ddd;font-size: 12px;}

@@ -51,6 +51,7 @@ class TalentsController extends AppController
      */
     public function add($name = null)
     {
+        if(!$name) return $this->redirect('/talents');
         $this->autoRender = false;
         $talent = $this->Talents->newEntity();
         $talent->name = $name;
@@ -69,6 +70,7 @@ class TalentsController extends AppController
      */
     public function edit($name = null)
     {
+        if(!$name) return $this->redirect('/');
         $talent = $this->Talents->find()->where(['name'=>$name])->contain(['medias'])->first();
         if ($this->request->is(['post'])) {
             $talent = $this->Talents->patchEntity($talent, $this->request->getData());

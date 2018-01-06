@@ -48,21 +48,21 @@ class ArticlesController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
-        $article = $this->Articles->newEntity();
-        if ($this->request->is('post')) {
-            $article = $this->Articles->patchEntity($article, $this->request->getData());
-            if ($this->Articles->save($article)) {
-                $this->Flash->success(__('The article has been saved.'));
+    // public function add()
+    // {
+    //     $article = $this->Articles->newEntity();
+    //     if ($this->request->is('post')) {
+    //         $article = $this->Articles->patchEntity($article, $this->request->getData());
+    //         if ($this->Articles->save($article)) {
+    //             $this->Flash->success(__('The article has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The article could not be saved. Please, try again.'));
-        }
-        $this->set(compact('article'));
-        $this->set('_serialize', ['article']);
-    }
+    //             return $this->redirect(['action' => 'index']);
+    //         }
+    //         $this->Flash->error(__('The article could not be saved. Please, try again.'));
+    //     }
+    //     $this->set(compact('article'));
+    //     $this->set('_serialize', ['article']);
+    // }
 
     /**
      * Edit method
@@ -76,12 +76,12 @@ class ArticlesController extends AppController
         $article = $this->Articles->get($id, [
             'contain' => []
         ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
+        if ($this->request->is(['post'])) {
             $article = $this->Articles->patchEntity($article, $this->request->getData());
             if ($this->Articles->save($article)) {
                 $this->Flash->success(__('The article has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect('news/'.$article->title);
             }
             $this->Flash->error(__('The article could not be saved. Please, try again.'));
         }
@@ -96,16 +96,16 @@ class ArticlesController extends AppController
      * @return \Cake\Http\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function delete($id = null)
-    {
-        $this->request->allowMethod(['post', 'delete']);
-        $article = $this->Articles->get($id);
-        if ($this->Articles->delete($article)) {
-            $this->Flash->success(__('The article has been deleted.'));
-        } else {
-            $this->Flash->error(__('The article could not be deleted. Please, try again.'));
-        }
+    // public function delete($id = null)
+    // {
+    //     $this->request->allowMethod(['post', 'delete']);
+    //     $article = $this->Articles->get($id);
+    //     if ($this->Articles->delete($article)) {
+    //         $this->Flash->success(__('The article has been deleted.'));
+    //     } else {
+    //         $this->Flash->error(__('The article could not be deleted. Please, try again.'));
+    //     }
 
-        return $this->redirect(['action' => 'index']);
-    }
+    //     return $this->redirect(['action' => 'index']);
+    // }
 }
