@@ -12,8 +12,9 @@
 
 <meta property="og:url" content="<?= 'http://lock-on.tokyo'.$this->request->here(); ?>" />
 
-<meta property="og:site_name" content="Lock On芸能事務所" />
+<meta property="og:site_name" content="ロックオン芸能事務所" />
 <meta property="og:locale" content="ja_JP" />
+<meta name="keywords" content="高収入 撮影会 ダンサー">
 
 <meta name="robots" content="<?= (isset($robots))?$robots:'index,follow'; ?>">
 

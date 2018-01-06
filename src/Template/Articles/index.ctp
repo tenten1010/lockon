@@ -1,7 +1,7 @@
 <?php $this->layout = 'lockon'; 
 $this->start('meta');
 $option = [
-    "title" => 'Lock On芸能事務所｜最新情報',
+    "title" => 'ロックオン芸能事務所｜最新情報',
     "description" => '最新情報一覧',
 ];
 echo $this->element('meta',$option);
