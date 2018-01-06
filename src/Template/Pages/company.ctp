@@ -9,7 +9,7 @@ $this->end();?>
 <style type="text/css">
 .pc #map {width: 450px; float: left;}
 .sp #map {width: 100%; border-radius: 10px;height: 300px}
-.pc article table {width: 400px; float: right; margin: 25px;}
+.pc article table {width: 400px; float: right; margin: 0 25px;}
 .sp article table {border-radius: 10px}
 table tr th{border:none;color: #000; width: 30%;color:#cc0033;}
 </style>
@@ -31,7 +31,7 @@ table tr th{border:none;color: #000; width: 30%;color:#cc0033;}
 				</tr>
 				<tr>
 					<th>お問い合わせ</th>
-					<td>lockonoffice@gmail.com</td>
+					<td><a class="red" href="mailto:lockonoffice@gmail.com">lockonoffice@gmail.com</a></td>
 				</tr>
 				<tr>
 					<th>代表取締役</th>
@@ -41,7 +41,20 @@ table tr th{border:none;color: #000; width: 30%;color:#cc0033;}
 					<th>資本金</th>
 					<td>5000万</td>
 				</tr>
-																
+				<tr>
+					<th>主要取引先</th>
+					<td style="line-height: 2">日本放送協会<br>
+						日本テレビ放送網(株)<br>
+						(株)テレビ朝日<br>
+						(株)TBSテレビ<br>
+						(株)テレビ東京<br>
+						(株)フジテレビジョン<br>
+						関西テレビ(株)<br>
+						中京テレビ(株)<br>
+						(株)サイバーエージェント<br>
+						(株)コムドアーズ<br>
+					</td>
+				</tr>											
 			</tbody>
 		</table>
 	</div>

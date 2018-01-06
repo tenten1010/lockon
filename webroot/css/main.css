@@ -112,7 +112,7 @@ h2,h3,h4 {text-shadow:1px 1px 2px #0000008a;}
 .pc article .title {height: 60px;margin: 50px 0; border: 1px solid #cc0033; border-width: 0 0 1px 0; padding-bottom: 10px;}
 .pc article .title p {display: block; float: right; color: #ddd;font-size: 12px;}
 .pc article .title h2 {border:0px; margin: 0; font-size: 24px;}
-article .contents {background-color: #bbb; color: #333; min-height: 500px; padding:30px;border-radius: 10px; }
+article .contents {background-color: #bbb; color: #333; min-height: 500px; padding:30px;border-radius: 10px; overflow: auto;}
 .sp article .contents {padding: 10px;}
 
 .sp header {height: 44px; padding:0; position: fixed; width: 100%;top: 0}
