@@ -2,12 +2,12 @@
 <?php if($isMobile){?>
 	<nav>
 		<span>≡</span>
-		<h1><a href="/"><img src="https://s3-ap-northeast-1.amazonaws.com/image.lock-on.tokyo/lockon-logo-header.png"></a></h1>
+		<h1><a href="/"><img src="https://image.lock-on.tokyo/lockon-logo-header.png"></a></h1>
 	</nav>
 <?php }else{ ?>
-	<a class="biglogo" href="/"><img src="https://s3-ap-northeast-1.amazonaws.com/image.lock-on.tokyo/lockon-logo-big.png"></a>
+	<a class="biglogo" href="/"><img src="https://image.lock-on.tokyo/lockon-logo-big.png"></a>
     <nav>
-    	<h1><a href="/"><img src="https://s3-ap-northeast-1.amazonaws.com/image.lock-on.tokyo/lockon-logo-header.png"></a></h1>
+    	<h1><a href="/"><img src="https://image.lock-on.tokyo/lockon-logo-header.png"></a></h1>
     	<ul>
     		<li><a href="/">ホーム</a></li>
     		<li><a href="/talents/">タレント</a></li>
