@@ -55,7 +55,7 @@ class AppView extends View
     }
 
     public function echoEditTalent($talent){
-        $talent->birthday = date('Y-m-d', strtotime($talent->birthday));
+        $talent->birthday = ($talent->birthday) ? date('Y-m-d', strtotime($talent->birthday)) : null;
         return $talent;
     }
 }
