@@ -8,7 +8,6 @@ $option = [
 echo $this->element('meta',$option);
 $this->end();
 $talent = $this->echoEditTalent($talent);
-debug($talent);
 ?>
 <form id="talent_form" method="post">
 	<input type="submit" class="btn" value="保存">
