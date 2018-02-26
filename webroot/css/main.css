@@ -8,9 +8,10 @@ a.btn {padding: 5px 10px;}
 a {text-decoration: none;}
 a,p,div,label {font-family: YuGothic, '游ゴシック', sans-serif;}
 header,footer{display: block; z-index: 100;}
+nav h1{margin: 0}
 footer {margin-top: 30px;box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.24)}
 header {box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24)}
-.pc header a img{height: 25px; float: left;}
+.pc header a img{height: 30px; float: left;}
 .sp header,footer {height: 100px; background-color: #cc0033; }
 
 .pc header h1 {display: inline-block;position: absolute;}
@@ -121,7 +122,7 @@ article .contents {background-color: #bbb; color: #333; min-height: 500px; paddi
 
 .sp header {height: 44px; padding:0; position: fixed; width: 100%;top: 0}
 .sp header nav {width: 100%;height: 44px}
-.sp header h1 {margin: auto;height: 44px; width: 150px;}
+.sp header h1 {margin: auto;height: 44px; width: 200px;}
 .sp header a {height: 44px;width: auto;}
 .sp header a img{object-fit: contain;}
 .sp header span {position: absolute;left: 0;line-height: 44px; font-size: 36px;}

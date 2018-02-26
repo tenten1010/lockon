@@ -2,7 +2,7 @@
 $talent = $this->echoTalent($talent);
 $this->start('meta');
 $option = [
-    "title" => 'ロックオン芸能事務所｜'.$talent->name_jp,
+    "title" => 'カオス映像制作会｜'.$talent->name_jp,
     "description" => $talent->description,
 ];
 echo $this->element('meta',$option);
