@@ -39,7 +39,7 @@ table tr th{border:none;color: #000; width: 30%;color:#cc0033;}
 				</tr>
 				<tr>
 					<th>資本金</th>
-					<td>5000万</td>
+					<td>500万</td>
 				</tr>
 				<tr>
 					<th>主要取引先</th>
@@ -53,6 +53,8 @@ table tr th{border:none;color: #000; width: 30%;color:#cc0033;}
 						中京テレビ(株)<br>
 						(株)サイバーエージェント<br>
 						(株)コムドアーズ<br>
+						アダルトメーカー全社<br>
+						(株)集英社
 					</td>
 				</tr>											
 			</tbody>
